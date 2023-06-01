@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intrapair_task/ui/shared/app_spacing.dart';
 import 'package:stacked/stacked.dart';
 import 'package:intrapair_task/ui/common/app_colors.dart';
 
@@ -23,7 +24,53 @@ class HomeView extends StackedView<HomeViewModel> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              ]
+                AppSpacing.bigHeight(),
+                Column(
+                  children: [
+                    const Text(
+                      'Hello, STACKED!',
+                      style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    AppSpacing.height(10),
+                    MaterialButton(
+                      color: Colors.black,
+                      onPressed: viewModel.incrementCounter,
+                      child: Text(
+                        viewModel.counterLabel,
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    MaterialButton(
+                      color: kcTextColor,
+                      child: const Text(
+                        'Show Dialog',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: viewModel.showDialog,
+                    ),
+                    MaterialButton(
+                      color: kcTextColor,
+                      child: const Text(
+                        'Show Bottom Sheet',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: viewModel.showBottomSheet,
+                    ),
+                  ],
+                )
+              ],
             ),
           ),
         ),

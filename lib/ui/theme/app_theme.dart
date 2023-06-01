@@ -16,8 +16,8 @@ import 'package:intrapair_task/ui/common/app_colors.dart';
 // /// If you are assigning a textStyle property to a text widget that has it's style values as a member of the textStyles in the app theme,
 /// You should assign the textStyle as so => 'textStyle: Theme.of(context).textStyle.textStyleNameAccordingToTheme' e.g Theme.of(context).colorScheme.bodyLarge
 
-class AfmThemeManager {
-  AfmThemeManager._();
+class AppTheme {
+  AppTheme._();
 
   static String get _fontFamily => 'Outfit';
   static ThemeData lightTheme = _themeData(_lightColorScheme);

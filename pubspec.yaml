@@ -42,6 +42,7 @@ flutter:
   
   assets:
    - assets/svgs/
+   - assets/pngs/
   
 
   # To add custom fonts to your application, add a fonts section here,

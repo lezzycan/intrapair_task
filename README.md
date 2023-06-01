@@ -44,9 +44,9 @@ lib
 │  └─ app.dart  
    -     Should contain only the configuration of the app
    -     Note: This file is where all the view and dependencies should be declared.
-├─ core                 
-│  ├─ constants  
--     This folder will contain on static const members, e.g AppStrings, AppImagesPath, LocalStorageKeys, ApiKeys.       
+├─ ui                 
+│  ├─ common 
+-     This folder will contain on static const members, e.g AppColors, AppStrings, AppImagesPath, LocalStorageKeys, ApiKeys.       
 │  ├─ extensions
 -     This folder should contain extension method such as DateFormatter, StringExtension, ValidationExtension. 
 -     Note: Any method that has the tendensy to be used repeatedly in different views should be converted to extension methods. 
@@ -63,7 +63,7 @@ lib
 ├─ services  
 -     This folder will contain the necessary repositories and  service files, such as NetworkService, UserService.  
 -     Note: Any logic that needs to use external apis(e.g SharePlus library uses ACTION_SEND Intent on Android and UIActivityViewController on iOS to display respective platform's share dialog or ImagePicker library which enables the app to select images from the platform file system) or method channels should be classified as a service.     
-├─ ui 
+├─ views 
 -     Here each feature of this project will be create folder which would contain the view and viewmodel of each feature.  
 -     Note: On no account should viewmodels know about eachother. Every View should have its viewmodel. e.g. home/home_view && home_viewmodel.                 
 │  └─ shared            

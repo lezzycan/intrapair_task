@@ -4,6 +4,7 @@ import 'package:intrapair_task/app/app.dialogs.dart';
 import 'package:intrapair_task/app/app.locator.dart';
 import 'package:intrapair_task/app/app.router.dart';
 import 'package:intrapair_task/ui/common/app_colors.dart';
+import 'package:intrapair_task/ui/theme/app_theme.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 void main() {
@@ -20,14 +21,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: Theme.of(context).copyWith(
-        primaryColor: kcBackgroundColor,
-        focusColor: kcPrimaryColor,
-        textTheme: Theme.of(context).textTheme.apply(
-              bodyColor: Colors.black,
-            ),
-      ),
+      title: 'Intrapair Task',
+      theme: AppTheme.lightTheme,
+      themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
       initialRoute: Routes.startupView,
       onGenerateRoute: StackedRouter().onGenerateRoute,
       navigatorKey: StackedService.navigatorKey,
