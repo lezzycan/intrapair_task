@@ -9,13 +9,10 @@ class AppAssets {
     return _baseImage + pathName;
   }
 
-  static String _getSvgPath(String pathName) {
-    pathName = "$pathName.svg";
-    return _baseSvg + pathName;
-  }
-
   /// PNGs
   static String stitchLogo = _getImagePath('stitch_logo');
   static String intrapairBackGround = _getImagePath('intrapair_background');
   static String panel = _getImagePath('panel');
+  static String stitch = _getImagePath('stitchVine');
+  static String google = _getImagePath('google-icon');
 }

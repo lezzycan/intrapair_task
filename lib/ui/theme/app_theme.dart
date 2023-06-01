@@ -35,47 +35,47 @@ class AppTheme {
         displayLarge: TextStyle(
           fontSize: 96.sp,
           color: colorScheme.onPrimary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         displayMedium: TextStyle(
           fontSize: 72.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         displaySmall: TextStyle(
           fontSize: 56.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         headlineMedium: TextStyle(
           fontSize: 40.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         headlineSmall: TextStyle(
           fontSize: 32.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         titleLarge: TextStyle(
           fontSize: 28.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         bodyLarge: TextStyle(
           fontSize: 24.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         bodyMedium: TextStyle(
           fontSize: 20.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         bodySmall: TextStyle(
           fontSize: 16.sp,
           color: colorScheme.secondary,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
       );
 
@@ -86,6 +86,6 @@ class AppTheme {
       );
 
   static IconThemeData _iconTheme(ColorScheme colorScheme) => IconThemeData(
-        color: colorScheme.onBackground,
+        color: colorScheme.primary,
       );
 }
