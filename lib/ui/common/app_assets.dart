@@ -16,7 +16,6 @@ class AppAssets {
 
   /// PNGs
   static String stitchLogo = _getImagePath('stitch_logo');
-
-  /// SVGs
-  static String intrapairBackGround = _getSvgPath('intrapair_background');
+  static String intrapairBackGround = _getImagePath('intrapair_background');
+  static String panel = _getImagePath('panel');
 }

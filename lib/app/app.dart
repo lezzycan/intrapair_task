@@ -1,16 +1,20 @@
 import 'package:intrapair_task/ui/bottom_sheets/notice/notice_sheet.dart';
 import 'package:intrapair_task/ui/dialogs/info_alert/info_alert_dialog.dart';
-import 'package:intrapair_task/ui/views/home/home_view.dart';
+
 import 'package:intrapair_task/ui/views/startup/startup_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'package:intrapair_task/ui/views/onboard/onboard_view.dart';
+import 'package:intrapair_task/ui/views/login/login_view.dart';
 // @stacked-import
 
 @StackedApp(
   routes: [
-    MaterialRoute(page: HomeView),
+    MaterialRoute(page: LoginView),
     MaterialRoute(page: StartupView),
-    // @stacked-route
+    MaterialRoute(page: OnboardView),
+    MaterialRoute(page: LoginView),
+// @stacked-route
   ],
   dependencies: [
     LazySingleton(classType: BottomSheetService),

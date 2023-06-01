@@ -1,12 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:intrapair_task/ui/common/app_dimensions.dart';
 
 /// This widget provides a vertical and horizontal spacing between widgets.
-
-/// These widgets can be used in place of using hardcoded heights or widths for sized boxes.
-/// For example, rather than declaring SizedBox(height: 20), we can declare AppSpacing.height(20).
-/// Or rather than declaring SizedBox(width: 8), we will declare AppSpacing.smallWidth().
 
 class AppSpacing extends StatelessWidget {
   const AppSpacing.empty({super.key})

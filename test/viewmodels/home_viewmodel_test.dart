@@ -3,12 +3,12 @@ import 'package:mockito/mockito.dart';
 import 'package:intrapair_task/app/app.bottomsheets.dart';
 import 'package:intrapair_task/app/app.locator.dart';
 import 'package:intrapair_task/ui/common/app_strings.dart';
-import 'package:intrapair_task/ui/views/home/home_viewmodel.dart';
+import 'package:intrapair_task/ui/views/login/home_viewmodel.dart';
 
 import '../helpers/test_helpers.dart';
 
 void main() {
-  HomeViewModel _getModel() => HomeViewModel();
+  LoginViewModel _getModel() => LoginViewModel();
 
   group('HomeViewmodelTest -', () {
     setUp(() => registerServices());
