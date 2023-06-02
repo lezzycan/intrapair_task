@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intrapair_task/ui/common/app_assets.dart';
 import 'package:intrapair_task/ui/common/app_colors.dart';
-import 'package:intrapair_task/ui/shared/app_spacing.dart';
 import 'package:stacked/stacked.dart';
 
 import 'startup_viewmodel.dart';

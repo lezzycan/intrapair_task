@@ -1,5 +1,4 @@
-import 'package:intrapair_task/ui/bottom_sheets/notice/notice_sheet.dart';
-import 'package:intrapair_task/ui/dialogs/info_alert/info_alert_dialog.dart';
+
 
 import 'package:intrapair_task/ui/views/startup/startup_view.dart';
 import 'package:stacked/stacked_annotations.dart';
@@ -23,13 +22,7 @@ import 'package:intrapair_task/ui/views/customer/customer_view.dart';
     LazySingleton(classType: NavigationService),
     // @stacked-service
   ],
-  bottomsheets: [
-    StackedBottomsheet(classType: NoticeSheet),
-    // @stacked-bottom-sheet
-  ],
-  dialogs: [
-    StackedDialog(classType: InfoAlertDialog),
-    // @stacked-dialog
-  ],
+  
+ 
 )
 class App {}

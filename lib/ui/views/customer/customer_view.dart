@@ -59,22 +59,24 @@ class CustomerView extends StackedView<CustomerViewModel> {
                   labelText: const Text('Full name'),
                   helperText: 'Assistive text',
                   borderRadius: BorderRadius.circular(8.0),
-                  labelStyle: _textTheme.bodySmall,
-                  
+                  labelStyle: _textTheme.bodySmall!.copyWith(color: kcPrimaryColor),
                 ),
                 AppSpacing.height(20.h),
-                     Align(
-                      alignment: Alignment.topLeft,
-                      child: Text('Gender', style: _textTheme.bodySmall!.copyWith(color: kcTextColor, fontSize: 12.sp),)),    
-                   Container(
-                    width: double.infinity,
-                    height: 50.h,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8.r),
-                      border: Border.all(width: 1.0),
-
-                    ),
-                    child: DropdownButtonHideUnderline(
+                Align(
+                    alignment: Alignment.topLeft,
+                    child: Text(
+                      'Gender',
+                      style: _textTheme.bodySmall!.copyWith(color: kcPrimaryColor)
+                          .copyWith(color: kcTextColor, fontSize: 12.sp),
+                    )),
+                Container(
+                  width: double.infinity,
+                  height: 50.h,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8.r),
+                    border: Border.all(width: 1.0),
+                  ),
+                  child: DropdownButtonHideUnderline(
                     child: DropdownButton<String>(
                       isExpanded: true,
                       items: viewModel.genders.map((String gender) {
@@ -89,26 +91,25 @@ class CustomerView extends StackedView<CustomerViewModel> {
                       }).toList(),
                       onChanged: viewModel.onChangedGender,
                       value: viewModel.selectedGender,
-                    //  icon: null,
+                      //  icon: null,
                     ),
                   ),
-                 ),
-                      
+                ),
                 AppSpacing.height(20.h),
                 AppTextFieldWidget(
-                  labelText:  const Text('Email Adress'),
+                  labelText: const Text('Email Adress'),
                   hintText: 'adeyinka@gmail.com',
-                   labelStyle: _textTheme.bodySmall!,
+                  labelStyle: _textTheme.bodySmall!.copyWith(color: kcPrimaryColor),
                 ),
-                    AppSpacing.height(20.h),
-                       AppTextFieldWidget(
-                  labelText:  const Text('Phone Number'),
+                AppSpacing.height(20.h),
+                AppTextFieldWidget(
+                  labelText: const Text('Phone Number'),
                   hintText: '+234 9036548321',
                   hintTextStyle: _textTheme.bodySmall,
-                   labelStyle: _textTheme.bodySmall!,
+                  labelStyle: _textTheme.bodySmall!.copyWith(color: kcPrimaryColor),
                 ),
-                 AppSpacing.height(30.h),
-                AppButton(onPressed: (){}, label: 'Next')
+                AppSpacing.height(30.h),
+                AppButton(onPressed: () {}, label: 'Next')
               ],
             ),
             const Text('Hello Intrapair')

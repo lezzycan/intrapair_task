@@ -2,7 +2,7 @@ class AppAssets {
   AppAssets._();
 
   static const String _baseImage = "assets/pngs/";
-  static const String _baseSvg = "assets/svgs/";
+  
 
   static String _getImagePath(String pathName) {
     pathName = "$pathName.png";
