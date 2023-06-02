@@ -41,6 +41,7 @@ class AppTextFieldWidget extends StatelessWidget {
   final Widget? prefix;
   final bool? readOnly;
   final TextAlign? textAlignPosition;
+  
   final List<TextInputFormatter>? inputFormatters;
   const AppTextFieldWidget(
       {Key? key,
@@ -83,12 +84,14 @@ class AppTextFieldWidget extends StatelessWidget {
       this.helperText,
       this.helperStyle,
       this.prefix,
-      this.readOnly})
+      this.readOnly,
+      })
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+     
       readOnly: readOnly ?? false,
       onTap: onTap,
       inputFormatters: inputFormatters,
