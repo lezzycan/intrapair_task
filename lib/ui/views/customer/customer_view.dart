@@ -296,7 +296,7 @@ class CustomerView extends HookWidget {
       builder: (context, model, child) => DefaultTabController(
         length: 2,
         child: Scaffold(
-          resizeToAvoidBottomInset: true,
+          resizeToAvoidBottomInset: false,
           appBar: AppBar(
             leading: IconButton(
               onPressed: () => Navigator.pop(context),
