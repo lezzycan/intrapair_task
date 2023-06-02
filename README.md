@@ -14,7 +14,7 @@
 ) 
 
    ## Hosted App Link
-   _N.B Once there is a stable build, it would be hosted on appetize and the link would be appended_
+   _N.B Is the link to app_
    [https://appetize.io/app/uhzunnacdcrdeeu6tz2inkrtvi]()
 
   ## Code Style
